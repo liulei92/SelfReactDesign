@@ -1,3 +1,11 @@
+yarn global add typescript 全局安装ts
+编译 ts文件 tsc a.ts => a.js
+            -w 监听
+
+yarn global add ts-node 全局安装ts-node
+编译 ts文件 并执行 ts-node a.ts => a.js
+
+
 项目地址：http://vikingship.xyz/
 
 第1章 课程导学（此章节必看）
