@@ -61,3 +61,32 @@ class Cat extends Animal {
 
 const hh = new Cat('nnn')
 console.log(hh.run())
+
+
+// -------------- 提取公共为interface，用implements 抽象类的属性和方法
+interface Radio {
+  switchRadio(): void;
+}
+
+interface Battery {
+  checkBatterStatus();
+}
+
+interface RadioWithBattery extends Radio {
+  checkBatterStatus();
+}
+
+class Car implements Radio {
+  switchRadio() {}
+}
+
+// class Cellphone implements Radio, Battery {
+//   switchRadio() {}
+//   checkBatterStatus() {}
+// }
+
+// 同上
+class Cellphone implements RadioWithBattery {
+  switchRadio() { }
+  checkBatterStatus() { }
+}
