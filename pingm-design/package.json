@@ -41,6 +41,7 @@
     "jest-resolve": "24.9.0",
     "jest-watch-typeahead": "0.4.2",
     "mini-css-extract-plugin": "0.9.0",
+    "node-sass": "^4.13.1",
     "optimize-css-assets-webpack-plugin": "5.0.3",
     "pnp-webpack-plugin": "1.6.4",
     "postcss-flexbugs-fixes": "4.1.0",
@@ -48,6 +49,7 @@
     "postcss-normalize": "8.0.1",
     "postcss-preset-env": "6.7.0",
     "postcss-safe-parser": "4.0.1",
+    "pre-commit": "^1.2.2",
     "react": "^16.13.1",
     "react-app-polyfill": "^1.0.6",
     "react-dev-utils": "^10.2.1",
@@ -71,6 +73,7 @@
     "start": "node scripts/start.js",
     "build": "GENERATE_SOURCEMAP=false node scripts/build.js",
     "report": "report=true node scripts/build.js",
+    "lint": "eslint --fix --ext .jsx,.tsx,.ts src",
     "test": "node scripts/test.js"
   },
   "eslintConfig": {
@@ -144,5 +147,8 @@
     "presets": [
       "react-app"
     ]
-  }
+  },
+  "pre-commit": [
+    "lint"
+  ]
 }

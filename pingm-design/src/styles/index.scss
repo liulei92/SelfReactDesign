@@ -1,0 +1,7 @@
+// 加 下划线 _ 后，告诉sass 当前scss只能作为模块被引入，但不可被直接import使用
+
+// config
+@import 'variables';
+
+// layout
+@import 'reboot'

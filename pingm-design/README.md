@@ -42,3 +42,10 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+
+## 当前已开启pre-commit
+
+```
+若想跳过 lint 检查，可git commit -m 'test' --no-verify
+```
