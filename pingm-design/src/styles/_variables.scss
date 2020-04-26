@@ -220,6 +220,21 @@ $btn-border-radius-sm:        $border-radius-sm !default;
 
 $btn-transition:              color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out !default;
 
+// Alert 警告提示-基本属性
+$alert-font-weight:             400;
+$alert-padding-y:               .375rem !default;
+$alert-padding-x:               .75rem !default;
+$alert-font-family:             $font-family-base !default;
+$alert-font-size:               $font-size-base !default;
+$alert-line-height:             $line-height-base !default;
+
+// 按钮边框
+$alert-border-width:            $border-width !default;
+
+// 按钮 radius
+$alert-border-radius:           $border-radius !default;
+
+
 // menu
 $menu-border-width:            $border-width !default;
 $menu-border-color:            $border-color !default;

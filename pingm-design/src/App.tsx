@@ -1,5 +1,7 @@
 import React from 'react'
-import Button, { ButtonType, ButtonSize } from '@com/Button/button'
+import Menu from './components/Menu/menu'
+import MenuItem from './components/Menu/menuItem'
+import SubMenu from './components/Menu/subMenu'
 
 function App () {
   return (
@@ -18,13 +20,26 @@ function App () {
         </a>
       </header>
 
-      <Button className='asd' onClick={() => { window.alert(1) }}>Hello</Button>
-      <Button disabled>default,disabled</Button>
-      <Button btnType={ButtonType.Primary} size={ButtonSize.Large}>Primary,Large</Button>
-      <Button btnType={ButtonType.Warning} size={ButtonSize.Small}>Warning,Small</Button>
-      <Button btnType={ButtonType.Danger} size={ButtonSize.Small}>Danger,Small</Button>
-      <Button btnType={ButtonType.Link} href='http://www.baidu.com' target='_blank'>百度</Button>
-      <Button disabled btnType={ButtonType.Link} href='http://www.baidu.com' target='_blank'>百度</Button>
+      <hr/>
+      <Menu defaultIndex='0' mode='horizontal' onSelect={(index) => { alert(index) }}>
+        <MenuItem>
+        0
+        </MenuItem>
+        <MenuItem>
+        1
+        </MenuItem>
+        <MenuItem disabled={true}>
+        2
+        </MenuItem>
+        <SubMenu title='dropdown'>
+          <MenuItem>
+          dropdown1
+          </MenuItem>
+          <MenuItem>
+          dropdown2
+          </MenuItem>
+        </SubMenu>
+      </Menu>
     </div>
   )
 }

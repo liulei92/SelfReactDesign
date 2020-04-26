@@ -1,0 +1,34 @@
+.alert {
+  position: relative;
+  font-weight: $alert-font-weight;
+  line-height: $alert-line-height;
+  color: $body-color;
+  white-space: nowrap;
+  background-image: none;
+  border: $alert-border-width solid transparent;
+  @include normal-size($alert-padding-y, $alert-padding-x, $alert-font-size, $border-radius);
+  transition: $btn-transition;
+  -webkit-transition: $btn-transition;
+  -moz-transition: $btn-transition;
+  -ms-transition: $btn-transition;
+  -o-transition: $btn-transition;
+  & + .alert {
+    margin-top: 10px;
+  }
+}
+
+.alert-success {
+  @include button-style(lighten($green, 50%), $green)
+}
+
+.alert-info {
+  @include button-style(lighten($primary, 45%), $primary)
+}
+
+.alert-warning {
+  @include button-style(lighten($warning, 45%), $warning)
+}
+
+.alert-error {
+  @include button-style(lighten($danger, 43%), $danger)
+}
