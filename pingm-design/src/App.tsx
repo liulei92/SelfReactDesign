@@ -1,15 +1,16 @@
 import React from 'react'
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fas } from '@fortawesome/free-solid-svg-icons'
+
 import Menu from './components/Menu/menu'
 import MenuItem from './components/Menu/menuItem'
 import SubMenu from './components/Menu/subMenu'
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCoffee } from '@fortawesome/free-solid-svg-icons'
+library.add(fas) // 引入所有图标
 
 function App () {
   return (
     <div className='App'>
-      <FontAwesomeIcon icon={faCoffee} size='2x' />
       <header className='App-header'>
         <p>
           Edit <code>src/App.tsx</code> and save to reload.

@@ -33,6 +33,18 @@ $danger:        $red !default;
 $light:         $gray-100 !default;
 $dark:          $gray-800 !default;
 
+$theme-colors: 
+(
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger,
+  "light":      $light,
+  "dark":       $dark
+);
+
 // $primary-color: #007fff; // 全局主色
 // $link-color: #007fff; // 链接色
 // $success-color: #52c41a; // 成功色
